@@ -114,6 +114,11 @@ const PartnerLogo = styled.a`
   margin: 10px;
 `;
 
+const WBTCLogo = styled.img`
+  width: 30px; /* Adjust size as needed */
+  margin-left: 5px; /* Space between text and logo */
+`;
+
 const data = [
   { name: 'CEX/Partnerships', value: 5 },
   { name: 'Future Utility', value: 5 },
@@ -239,8 +244,8 @@ function App() {
               backgroundColor: '#2a2a3c', 
               width: '250px' // Set a fixed width for uniformity
             }}>
-              <h4>Burned Liquidity</h4>
-              <p>Through Gempad’s launchpad, liquidity will be burned automatically, ensuring security and trust.</p>
+              <h4>Locked Liquidity</h4>
+              <p>Through Gempad’s launchpad, liquidity will be locked for 6 months to ensure security and trust.</p>
             </div>
             <div style={{ 
               margin: '10px', 
@@ -275,6 +280,12 @@ function App() {
             <p><strong>Name:</strong> Free Base</p>
             <p><strong>Ticker:</strong> FREE</p>
             <p><strong>Liquidity Tax:</strong> 2%</p>
+            <p>
+              <a href="https://basescan.org/token/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf" target="_blank" rel="noopener noreferrer">
+                <WBTCLogo src="/wbtc.png" alt="WBTC" />
+              </a>
+            </p>
+            <p><strong>Rewards:</strong> 3% in Coinbase Wrapped Bitcoin</p>
             <p><strong>Total Supply:</strong> 1,000,000,000 tokens</p>
           </div>
           <div style={{ margin: '20px 0', padding: '15px', border: '1px solid #007bff', borderRadius: '8px', backgroundColor: '#2a2a3c' }}>
@@ -309,7 +320,7 @@ function App() {
             </div>
           </div>
           <p>
-            Tokenomics will be finalized after the presale to account for exact burning and distribution specifics. This ensures a fair and balanced allocation based on community participation.
+            Tokenomics will be finalized after the presale to account for exact locking and distribution specifics. This ensures a fair and balanced allocation based on community participation.
           </p>
         </Section>
         <Section>
