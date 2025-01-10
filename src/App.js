@@ -300,13 +300,13 @@ function App() {
                  onMouseEnter={() => setShowLegend(true)}
                  onMouseLeave={() => setShowLegend(false)}
             >
-              <PieChart width={200} height={200}>
+              <PieChart width={600} height={600}>
                 <Pie
                   data={data}
-                  cx={100}
-                  cy={100}
-                  innerRadius={40}
-                  outerRadius={80}
+                  cx={300}
+                  cy={300}
+                  innerRadius={80}
+                  outerRadius={160}
                   fill="#8884d8"
                   paddingAngle={5}
                   dataKey="value"
