@@ -20,9 +20,9 @@ const Background = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(270deg, #1e1e2f, #2a2a3c, #1e1e2f);
-  background-size: 400% 400%;
-  animation: ${waveAnimation} 10s ease infinite;
+  background-image: url('/chainedearth.jpg');
+  background-size: cover;
+  background-position: center;
   z-index: -1; /* Ensure it stays behind other content */
 `;
 
@@ -276,11 +276,11 @@ function App() {
           </div>
           <div style={{ margin: '20px 0', padding: '15px', border: '1px solid #007bff', borderRadius: '8px', backgroundColor: '#2a2a3c' }}>
             <h3>Supply Breakdown</h3>
-            <ul>
-              <li>5% for CEX/Partnerships</li>
-              <li>5% for Future Utility</li>
-              <li>Remaining for Community Distribution</li>
-            </ul>
+            <div>
+              <p>5% for CEX/Partnerships</p>
+              <p>5% for Future Utility</p>
+              <p>Remaining for Community Distribution</p>
+            </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 'auto', marginTop: '10px' }}
                  onMouseEnter={() => setShowLegend(true)}
                  onMouseLeave={() => setShowLegend(false)}
@@ -308,8 +308,6 @@ function App() {
           <p>
             Tokenomics will be finalized after the presale to account for exact burning and distribution specifics. This ensures a fair and balanced allocation based on community participation.
           </p>
-          
-          
         </Section>
         <Section>
           <h2>How to Buy</h2>
@@ -352,6 +350,28 @@ function App() {
             </PartnerLogo>
             {/* Add more logos as needed */}
           </PartnerLogos>
+        </Section>
+        <Section>
+          <h2>Art Gallery</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <img src="/arrowup.jpg" alt="Art 1" style={{ width: '200px', margin: '10px' }} />
+            <img src="/baselogofree.jpg" alt="Art 2" style={{ width: '200px', margin: '10px' }} />
+            <img src="/chainedearth.jpg" alt="Art 3" style={{ width: '200px', margin: '10px' }} />
+            <img src="/Chains.jpg" alt="Art 4" style={{ width: '200px', margin: '10px' }} />
+            <img src="/Coin.png" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
+            <img src="/Coins Dropping.png" alt="Art 1" style={{ width: '200px', margin: '10px' }} />
+            <img src="/coins.jpg" alt="Art 2" style={{ width: '200px', margin: '10px' }} />
+            <img src="/FREE BASE Merged.png" alt="Art 3" style={{ width: '200px', margin: '10px' }} />
+            <img src="/FREE BASE Text with Chains.png" alt="Art 4" style={{ width: '200px', margin: '10px' }} />
+            <img src="/Green Up Arrows.png" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
+            <img src="/Logo with Text.png" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
+
+            <img src="/logowout.jpg" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
+            <img src="/rockets.jpg" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
+            <img src="/textchains.jpg" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
+            
+            {/* Add more images as needed */}
+          </div>
         </Section>
       </Content>
     </Container>
