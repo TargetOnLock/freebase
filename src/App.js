@@ -178,6 +178,9 @@ function App() {
               <SocialIcon href="https://x.com/Based_Free_Base" target="_blank">
                 <img src="/twitter.png" alt="Twitter" width="40" />
               </SocialIcon>
+              <SocialIcon href="mailto:info@freebased.info" target="_blank">
+                <img src="/email.png" alt="Email" width="40" />
+              </SocialIcon>
             </Socials>
           </HeroSection>
         </Section>
