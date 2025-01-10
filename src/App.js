@@ -246,7 +246,7 @@ function App() {
               width: '250px' // Set a fixed width for uniformity
             }}>
               <h4>Locked Liquidity</h4>
-              <p>Through Gempad’s launchpad, liquidity will be locked for 6 months to ensure security and trust.</p>
+              <p>Through Gempad’s launchpad, liquidity will be locked to ensure security and trust.</p>
             </div>
             <div style={{ 
               margin: '10px', 
