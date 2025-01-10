@@ -380,12 +380,21 @@ function App() {
             <img src="/FREE BASE Text with Chains.png" alt="Art 4" style={{ width: '200px', margin: '10px' }} />
             <img src="/Green Up Arrows.png" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
             <img src="/Logo with Text.png" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
-
             <img src="/logowout.jpg" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
             <img src="/rockets.jpg" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
             <img src="/textchains.jpg" alt="Art 5" style={{ width: '200px', margin: '10px' }} />
-            
-            {/* Add more images as needed */}
+            <img src="/1.png" alt="Meme 1" style={{ width: '200px', margin: '10px' }} />
+            <img src="/2.png" alt="Meme 2" style={{ width: '200px', margin: '10px' }} />
+            <img src="/3.png" alt="Meme 3" style={{ width: '200px', margin: '10px' }} />
+            <img src="/4.png" alt="Meme 4" style={{ width: '200px', margin: '10px' }} />
+            <img src="/5.png" alt="Meme 5" style={{ width: '200px', margin: '10px' }} />
+            <img src="/6.png" alt="Meme 6" style={{ width: '200px', margin: '10px' }} />
+            <img src="/7.png" alt="Meme 7" style={{ width: '200px', margin: '10px' }} />
+            <img src="/8.png" alt="Meme 8" style={{ width: '200px', margin: '10px' }} />
+            <img src="/9.png" alt="Meme 9" style={{ width: '200px', margin: '10px' }} />
+            <img src="/10.png" alt="Meme 10" style={{ width: '200px', margin: '10px' }} />
+            <img src="/11.png" alt="Meme 11" style={{ width: '200px', margin: '10px' }} />
+            <img src="/12.png" alt="Meme 12" style={{ width: '200px', margin: '10px' }} />
           </div>
         </Section>
       </Content>
