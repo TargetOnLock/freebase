@@ -220,8 +220,9 @@ function App() {
               backgroundColor: '#2a2a3c', 
               width: '250px' // Set a fixed width for uniformity
             }}>
-              <h4>2% Liquidity Tax</h4>
+              <h4>5% Transaction Tax</h4>
               <p>Every transaction contributes 2% to the liquidity pool, ensuring a robust and growing floor price.</p>
+              <p>Additionally, 3% of each transaction is allocated as rewards in Coinbase Wrapped Bitcoin (WBTC).</p>
             </div>
             <div style={{ 
               margin: '10px', 
