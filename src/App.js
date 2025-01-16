@@ -20,7 +20,7 @@ const Background = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/chainedearth.jpg');
+  background-color: black;
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensure it stays behind other content */
@@ -183,95 +183,38 @@ function App() {
               <SocialIcon href="https://x.com/Based_Free_Base" target="_blank">
                 <img src="/twitter.png" alt="Twitter" width="40" />
               </SocialIcon>
+              <SocialIcon href="https://free-base.gitbook.io/free-base-whitepaper" target="_blank">
+                <img src="/whitepaper.png" alt="Whitepaper" width="40" />
+              </SocialIcon>
               <SocialIcon href="mailto:info@freebased.info" target="_blank">
                 <img src="/email.png" alt="Email" width="40" />
               </SocialIcon>
+              
             </Socials>
           </HeroSection>
         </Section>
+        
+        
         <Section>
-          <h2>About Free Base (FREE)</h2>
+          <Logo src="/free base piggies.png" alt="Logo" /> 
+          <h3>NFT Collection: Free Base Piggies</h3>
           <p>
-            Welcome to Free Base, the token that embodies the spirit of breaking free from traditional finance and embracing true decentralization. Built on the Base Chain, FREE is designed to empower individuals with a fair and transparent financial system, free from the constraints of central authorities.
+            In preparation for the launch of Free Base, we are introducing an exclusive NFT collection: Free Base Piggies. This collection will consist of 6,900 unique NFTs, each symbolizing the playful yet powerful spirit of our movement.
           </p>
-          <p>
-            Our mission is simple: Break the Chains of Centralization. With a solid foundation and a fun, engaging approach, Free Base is more than just a token — it's a movement for financial freedom.
-          </p>
-          <h3>Key Features</h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <div style={{ 
-              margin: '10px', 
-              textAlign: 'center', 
-              padding: '15px', 
-              border: '1px solid #007bff', 
-              borderRadius: '8px', 
-              backgroundColor: '#2a2a3c', 
-              width: '250px' // Set a fixed width for uniformity
-            }}>
-              <h4>Breaking the Chains</h4>
-              <p>Free Base symbolizes the liberation from centralized systems, allowing individuals to take control of their financial destiny.</p>
-            </div>
-            <div style={{ 
-              margin: '10px', 
-              textAlign: 'center', 
-              padding: '15px', 
-              border: '1px solid #007bff', 
-              borderRadius: '8px', 
-              backgroundColor: '#2a2a3c', 
-              width: '250px' // Set a fixed width for uniformity
-            }}>
-              <h4>5% Transaction Tax</h4>
-              <p>Every transaction contributes 2% to the liquidity pool, ensuring a robust and growing floor price.</p>
-              <p>Additionally, 3% of each transaction is allocated as rewards in Coinbase Wrapped Bitcoin (WBTC).</p>
-            </div>
-            <div style={{ 
-              margin: '10px', 
-              textAlign: 'center', 
-              padding: '15px', 
-              border: '1px solid #007bff', 
-              borderRadius: '8px', 
-              backgroundColor: '#2a2a3c', 
-              width: '250px' // Set a fixed width for uniformity
-            }}>
-              <h4>Uniswap Launch</h4>
-              <p>Post-presale, FREE will launch on Uniswap, making it accessible to everyone.</p>
-            </div>
-            <div style={{ 
-              margin: '10px', 
-              textAlign: 'center', 
-              padding: '15px', 
-              border: '1px solid #007bff', 
-              borderRadius: '8px', 
-              backgroundColor: '#2a2a3c', 
-              width: '250px' // Set a fixed width for uniformity
-            }}>
-              <h4>Locked Liquidity</h4>
-              <p>Through Gempad’s launchpad, liquidity will be locked to ensure security and trust.</p>
-            </div>
-            <div style={{ 
-              margin: '10px', 
-              textAlign: 'center', 
-              padding: '15px', 
-              border: '1px solid #007bff', 
-              borderRadius: '8px', 
-              backgroundColor: '#2a2a3c', 
-              width: '250px' // Set a fixed width for uniformity
-            }}>
-              <h4>Renounced Contract</h4>
-              <p>To reinforce decentralization, the contract will be renounced at launch, eliminating any centralized control.</p>
-            </div>
-            <div style={{ 
-              margin: '10px', 
-              textAlign: 'center', 
-              padding: '15px', 
-              border: '1px solid #007bff', 
-              borderRadius: '8px', 
-              backgroundColor: '#2a2a3c', 
-              width: '250px' // Set a fixed width for uniformity
-            }}>
-              <h4>No Team Tokens</h4>
-              <p>Free Base is for the community, by the community, with no unfair advantages.</p>
-            </div>
+          <div>
+            <h4>Mint Details:</h4>
+            <div><strong>Price:</strong> 0.025 ETH per NFT</div>
+            <div><strong>Max Per Wallet:</strong> 12 NFTs</div>
+          </div>
+          <div>
+            <h4>Utility for NFT Holders:</h4>
+            <div style={{ marginBottom: '20px' }}><strong>Airdrop Eligibility:</strong> </div>
+
+            <div style={{ marginBottom: '20px' }}>Holders of a minimum of 3 Free Base Piggies will receive an airdrop of FREE tokens at launch.</div>
+
+            <div style={{ marginBottom: '20px' }}><strong>Presale Whitelist:</strong> </div>
+            
+            <div style={{ marginBottom: '20px' }}>NFT holders with a minimum of 3 Free Base Piggies will be automatically added to the whitelist for our presale.</div>
           </div>
         </Section>
         <Section>
