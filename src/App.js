@@ -196,7 +196,7 @@ function App() {
         
         
         <Section>
-          <Logo src="/free base piggies.png" alt="Logo" /> 
+          <Logo src="/free base piggies.png" alt="Logo" style={{ maxWidth: '100%', height: 'auto' }} /> 
           <h3>NFT Collection: Free Base Piggies</h3>
           <p>
             In preparation for the launch of Free Base, we are introducing an exclusive NFT collection: Free Base Piggies. This collection will consist of 6,900 unique NFTs, each symbolizing the playful yet powerful spirit of our movement.
