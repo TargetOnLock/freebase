@@ -197,10 +197,10 @@ function App() {
         
         <Section>
           <Logo 
-            src="/free base piggies.png" 
+            src="/osfeatured.png" 
             alt="Logo" 
             style={{ maxWidth: '100%', height: 'auto' }} 
-            onError={(e) => { e.target.onerror = null; e.target.src="/free base piggies.png"; }} // Fallback image
+            onError={(e) => { e.target.onerror = null; e.target.src="/osfeatured.png"; }} // Fallback image
           />
           <h3>NFT Collection: Free Base Piggies</h3>
           <p>
