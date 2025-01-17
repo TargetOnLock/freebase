@@ -65,7 +65,9 @@ const Hero = styled.h1`
 `;
 
 const Logo = styled.img`
-  width: 500px; /* Adjust logo size to be bigger */
+  max-width: 100%; /* Ensure the logo does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 0; /* Add some margin for spacing */
 `;
 
 const Socials = styled.div`
@@ -176,7 +178,7 @@ function App() {
           <HeroSection>
             <Logo src="/Free Base Piggies.png" alt="Logo" />
             <CopyButton onClick={copyToClipboard}>Copy Contract Address</CopyButton>
-            <Socials>
+            <Socials style={{ marginTop: 'auto' }}>
               <SocialIcon href="https://t.me/FreeBasePortal" target="_blank">
                 <img src="/telegram.png" alt="Telegram" width="40" />
               </SocialIcon>
@@ -189,7 +191,6 @@ function App() {
               <SocialIcon href="mailto:info@freebased.info" target="_blank">
                 <img src="/email.png" alt="Email" width="40" />
               </SocialIcon>
-              
             </Socials>
           </HeroSection>
         </Section>
