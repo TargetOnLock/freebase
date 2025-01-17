@@ -185,6 +185,9 @@ function App() {
               <SocialIcon href="https://x.com/Based_Free_Base" target="_blank">
                 <img src="/twitter.png" alt="Twitter" width="40" />
               </SocialIcon>
+              <SocialIcon href="https://opensea.io" target="_blank">
+                <img src="/opensea.png" alt="OpenSea" width="40" />
+              </SocialIcon>
               <SocialIcon href="https://free-base.gitbook.io/free-base-whitepaper" target="_blank">
                 <img src="/whitepaper.png" alt="Whitepaper" width="40" />
               </SocialIcon>
@@ -218,6 +221,8 @@ function App() {
 
             <div style={{ marginBottom: '20px' }}>Holders of a minimum of 3 Free Base Piggies will receive an airdrop of FREE tokens at launch.</div>
 
+            <div style={{ marginBottom: '20px' }}>In addition, as long as you hold 1 Free Base Piggie, you will be eligible for airdrops of FREE tokens on a drip system.</div>
+
             <div style={{ marginBottom: '20px' }}><strong>Presale Whitelist:</strong> </div>
             
             <div style={{ marginBottom: '20px' }}>NFT holders with a minimum of 3 Free Base Piggies will be automatically added to the whitelist for our presale.</div>
@@ -240,34 +245,7 @@ function App() {
           </TokenomicsContainer>
           <TokenomicsContainer>
             <h3>Supply Breakdown</h3>
-            <div>
-              <p>5% for CEX/Partnerships</p>
-              <p>5% for Future Utility</p>
-              <p>Remaining for Community Distribution</p>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 'auto', marginTop: '10px' }}
-                 onMouseEnter={() => setShowLegend(true)}
-                 onMouseLeave={() => setShowLegend(false)}
-            >
-              <PieChart width={600} height={600}>
-                <Pie
-                  data={data}
-                  cx={300}
-                  cy={300}
-                  innerRadius={80}
-                  outerRadius={160}
-                  fill="#8884d8"
-                  paddingAngle={5}
-                  dataKey="value"
-                >
-                  {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip />
-              </PieChart>
-              {showLegend && <Legend />}
-            </div>
+            <p>To Be Announced Soon</p>
           </TokenomicsContainer>
           <p>
             Tokenomics will be finalized after the presale to account for exact locking and distribution specifics. This ensures a fair and balanced allocation based on community participation.
