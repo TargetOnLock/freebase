@@ -185,7 +185,7 @@ function App() {
               <SocialIcon href="https://x.com/Based_Free_Base" target="_blank">
                 <img src="/twitter.png" alt="Twitter" width="40" />
               </SocialIcon>
-              <SocialIcon href="https://opensea.io" target="_blank">
+              <SocialIcon href="https://opensea.io/collection/free-base-piggies/overview" target="_blank">
                 <img src="/opensea.png" alt="OpenSea" width="40" />
               </SocialIcon>
               <SocialIcon href="https://free-base.gitbook.io/free-base-whitepaper" target="_blank">
