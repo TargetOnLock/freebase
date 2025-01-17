@@ -2,17 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 
-const waveAnimation = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-`;
+
 
 const Background = styled.div`
   position: absolute;
@@ -20,9 +10,11 @@ const Background = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
-  background-size: cover;
-  background-position: center;
+  background-image: url('/osfeatured.png'); /* Set the image as background */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-attachment: fixed; /* Make the background static */
   z-index: -1; /* Ensure it stays behind other content */
 `;
 
@@ -65,7 +57,7 @@ const Section = styled.div`
   padding: 20px;
   border: 1px solid #007bff; /* Blue border */
   border-radius: 8px;
-  background-color: #2a2a3c; /* Lighter shade of the background */
+  background: linear-gradient(135deg, #d76d00, #ffb300); /* Darker gradient from a muted orange to a lighter orange */
 `;
 
 const Hero = styled.h1`
@@ -127,6 +119,14 @@ const data = [
 
 const COLORS = ['#007bff', '#28a745', '#ffc107']; // Colors for the pie chart
 
+const TokenomicsContainer = styled.div`
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 8px;
+  background: linear-gradient(135deg, #d76d00, #ffb300); /* Same gradient background */
+`;
+
 function App() {
   const smartContractAddress = "0x0000000000000000000000000000000000000000"; // Replace with your actual smart contract address
 
@@ -174,7 +174,7 @@ function App() {
         <Section>
           <Hero>{heroText}</Hero>
           <HeroSection>
-            <Logo src="/freebase.png" alt="Logo" />
+            <Logo src="/Free Base Piggies.png" alt="Logo" />
             <CopyButton onClick={copyToClipboard}>Copy Contract Address</CopyButton>
             <Socials>
               <SocialIcon href="https://t.me/FreeBasePortal" target="_blank">
@@ -224,7 +224,7 @@ function App() {
         </Section>
         <Section>
           <h2>Tokenomics</h2>
-          <div style={{ margin: '20px 0', padding: '15px', border: '1px solid #007bff', borderRadius: '8px', backgroundColor: '#2a2a3c' }}>
+          <TokenomicsContainer>
             <h3>Token Details</h3>
             <p><strong>Name:</strong> Free Base</p>
             <p><strong>Ticker:</strong> FREE</p>
@@ -236,8 +236,8 @@ function App() {
             </p>
             <p><strong>Rewards:</strong> 3% in Coinbase Wrapped Bitcoin</p>
             <p><strong>Total Supply:</strong> 1,000,000,000 tokens</p>
-          </div>
-          <div style={{ margin: '20px 0', padding: '15px', border: '1px solid #007bff', borderRadius: '8px', backgroundColor: '#2a2a3c' }}>
+          </TokenomicsContainer>
+          <TokenomicsContainer>
             <h3>Supply Breakdown</h3>
             <div>
               <p>5% for CEX/Partnerships</p>
@@ -267,7 +267,7 @@ function App() {
               </PieChart>
               {showLegend && <Legend />}
             </div>
-          </div>
+          </TokenomicsContainer>
           <p>
             Tokenomics will be finalized after the presale to account for exact locking and distribution specifics. This ensures a fair and balanced allocation based on community participation.
           </p>
