@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 
 
 
@@ -144,7 +143,7 @@ function App() {
     <Container>
       <Background />
       {/* Raining logos */}
-      {Array.from({ length: 200 }).map((_, index) => (
+      {Array.from({ length: 100 }).map((_, index) => (
         <RainLogo 
           key={index} 
           src="/baselogo.png" 
@@ -161,7 +160,7 @@ function App() {
         <Section>
           <Hero>{heroText}</Hero>
           <HeroSection>
-            <Logo src="/coin.png" alt="Logo" />
+            <Logo src="/Coin.png" alt="Logo" />
             <CopyButton onClick={copyToClipboard}>Copy Contract Address</CopyButton>
             <Socials style={{ marginTop: 'auto' }}>
               <SocialIcon href="https://t.me/FreeBasePortal" target="_blank">
