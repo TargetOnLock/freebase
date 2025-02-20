@@ -152,7 +152,7 @@ function App() {
             left: `${Math.random() * 100}vw`, // Random horizontal position
             top: `${Math.random() * -100}vh`, // Start from a random position above the viewport
             animationDelay: `${Math.random() * 15}s`, 
-            animationDuration: `${2 + Math.random() * 5}s` // Random duration for each logo
+            animationDuration: `${2 + Math.random() * 1}s` // Random duration for each logo
           }} 
         />
       ))}
