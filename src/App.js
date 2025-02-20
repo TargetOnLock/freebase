@@ -10,7 +10,7 @@ const Background = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/osfeatured.png'); /* Set the image as background */
+  background-image: url('/redwall.png'); /* Set the image as background */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating the image */
@@ -176,7 +176,7 @@ function App() {
         <Section>
           <Hero>{heroText}</Hero>
           <HeroSection>
-            <Logo src="/Free Base Piggies.png" alt="Logo" />
+            <Logo src="/coin.png" alt="Logo" />
             <CopyButton onClick={copyToClipboard}>Copy Contract Address</CopyButton>
             <Socials style={{ marginTop: 'auto' }}>
               <SocialIcon href="https://t.me/FreeBasePortal" target="_blank">
@@ -185,12 +185,7 @@ function App() {
               <SocialIcon href="https://x.com/Based_Free_Base" target="_blank">
                 <img src="/twitter.png" alt="Twitter" width="40" />
               </SocialIcon>
-              <SocialIcon href="https://opensea.io/collection/free-base-piggies/overview" target="_blank">
-                <img src="/opensea.png" alt="OpenSea" width="40" />
-              </SocialIcon>
-              <SocialIcon href="https://free-base.gitbook.io/free-base-whitepaper" target="_blank">
-                <img src="/whitepaper.png" alt="Whitepaper" width="40" />
-              </SocialIcon>
+
               <SocialIcon href="mailto:info@freebased.info" target="_blank">
                 <img src="/email.png" alt="Email" width="40" />
               </SocialIcon>
@@ -199,49 +194,17 @@ function App() {
         </Section>
         
         
-        <Section>
-          <Logo 
-            src="/osfeatured.png" 
-            alt="Logo" 
-            style={{ maxWidth: '100%', height: 'auto' }} 
-            onError={(e) => { e.target.onerror = null; e.target.src="/osfeatured.png"; }} // Fallback image
-          />
-          <h3>NFT Collection: Free Base Piggies</h3>
-          <p>
-            In preparation for the launch of Free Base, we are introducing an exclusive NFT collection: Free Base Piggies. This collection will consist of 6,900 unique NFTs, each symbolizing the playful yet powerful spirit of our movement.
-          </p>
-          <div>
-            <h4>Mint Details:</h4>
-            <div><strong>Price:</strong> 0.025 ETH per NFT</div>
-            <div><strong>Max Per Wallet:</strong> 12 NFTs</div>
-          </div>
-          <div>
-            <h4>Utility for NFT Holders:</h4>
-            <div style={{ marginBottom: '20px' }}><strong>Airdrop Eligibility:</strong> </div>
-
-            <div style={{ marginBottom: '20px' }}>Holders of a minimum of 3 Free Base Piggies will receive an airdrop of FREE tokens at launch.</div>
-
-            <div style={{ marginBottom: '20px' }}>In addition, as long as you hold 1 Free Base Piggie, you will be eligible for airdrops of FREE tokens on a drip system.</div>
-
-            <div style={{ marginBottom: '20px' }}><strong>Presale Whitelist:</strong> </div>
-            
-            <div style={{ marginBottom: '20px' }}>NFT holders with a minimum of 3 Free Base Piggies will be automatically added to the whitelist for our presale.</div>
-          </div>
-        </Section>
+        
         <Section>
           <h2>Tokenomics</h2>
           <TokenomicsContainer>
             <h3>Token Details</h3>
             <p><strong>Name:</strong> Free Base</p>
             <p><strong>Ticker:</strong> FREE</p>
-            <p><strong>Liquidity Tax:</strong> 2%</p>
-            <p>
-              <a href="https://basescan.org/token/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf" target="_blank" rel="noopener noreferrer">
-                <WBTCLogo src="/wbtc.png" alt="WBTC" />
-              </a>
-            </p>
-            <p><strong>Rewards:</strong> 3% in Coinbase Wrapped Bitcoin</p>
-            <p><strong>Total Supply:</strong> 1,000,000,000 tokens</p>
+
+            <p><strong>Transaction Taxes:</strong> 2% Reflections, 2% Marketing</p>
+
+            <p><strong>Total Supply:</strong> 420,000,000 tokens</p>
           </TokenomicsContainer>
           <TokenomicsContainer>
             <h3>Supply Breakdown</h3>
@@ -258,13 +221,13 @@ function App() {
           <div style={{ textAlign: 'center' }}>
             <div>
               <img src="/metamask.png" alt="MetaMask" width="40" />
-              <p><strong>Step 1:</strong> Use MetaMask as your wallet to store your tokens.</p>
+              <p><strong>Step 1:</strong> Open up your wallet and add the token to your wallet.</p>
             </div>
             <div>
               <img src="/uniswap.png" alt="Uniswap" width="40" />
               <p><strong>Step 2:</strong> Go to Uniswap to swap for the FREE token.</p>
             </div>
-            <p><strong>Step 3:</strong> Don't forget to add the contract address to your wallet if you're using MetaMask!</p>
+
             <p>Make sure to check the presale details on Gempad for the exact timing and instructions.</p>
             <p>Happy trading and welcome to the Free Base community!</p>
           </div>
