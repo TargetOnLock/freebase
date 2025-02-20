@@ -144,7 +144,7 @@ function App() {
     <Container>
       <Background />
       {/* Raining logos */}
-      {Array.from({ length: 500 }).map((_, index) => (
+      {Array.from({ length: 200 }).map((_, index) => (
         <RainLogo 
           key={index} 
           src="/baselogo.png" 
@@ -153,7 +153,7 @@ function App() {
             left: `${Math.random() * 100}vw`, // Random horizontal position
             top: `${Math.random() * -100}vh`, // Start from a random position above the viewport
             animationDelay: `${Math.random() * 15}s`, 
-            animationDuration: `${2 + Math.random() * 55}s` // Random duration for each logo
+            animationDuration: `${2 + Math.random() * 5}s` // Random duration for each logo
           }} 
         />
       ))}
