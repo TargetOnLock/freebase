@@ -108,19 +108,6 @@ const PartnerLogo = styled.a`
   margin: 10px;
 `;
 
-const WBTCLogo = styled.img`
-  width: 30px; /* Adjust size as needed */
-  margin-left: 5px; /* Space between text and logo */
-`;
-
-const data = [
-  { name: 'CEX/Partnerships', value: 5 },
-  { name: 'Future Utility', value: 5 },
-  { name: 'Community Distribution', value: 90 }, // Assuming the remaining is 90%
-];
-
-const COLORS = ['#007bff', '#28a745', '#ffc107']; // Colors for the pie chart
-
 const TokenomicsContainer = styled.div`
   margin: 20px 0;
   padding: 15px;
@@ -136,8 +123,6 @@ function App() {
     navigator.clipboard.writeText(smartContractAddress);
     alert("Smart contract address copied to clipboard!");
   };
-
-  const [showLegend, setShowLegend] = useState(false);
   const [heroText, setHeroText] = useState("");
   const fullText = "";
 
@@ -159,7 +144,7 @@ function App() {
     <Container>
       <Background />
       {/* Raining logos */}
-      {Array.from({ length: 50 }).map((_, index) => (
+      {Array.from({ length: 500 }).map((_, index) => (
         <RainLogo 
           key={index} 
           src="/baselogo.png" 
@@ -167,8 +152,8 @@ function App() {
           style={{ 
             left: `${Math.random() * 100}vw`, // Random horizontal position
             top: `${Math.random() * -100}vh`, // Start from a random position above the viewport
-            animationDelay: `${Math.random() * 5}s`, 
-            animationDuration: `${3 + Math.random() * 5}s` // Random duration for each logo
+            animationDelay: `${Math.random() * 15}s`, 
+            animationDuration: `${2 + Math.random() * 55}s` // Random duration for each logo
           }} 
         />
       ))}
